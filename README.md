@@ -87,5 +87,3 @@ Further analysis could explore:
 - Spatial relationships between individuals (e.g. proximity of male–female burials)
 - Directionality or clustering patterns that may indicate family or social groupings
 - Finer chronological divisions to assess demographic shifts during periods of conflict or social change
-
----
