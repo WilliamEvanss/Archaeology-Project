@@ -1,3 +1,91 @@
-# Archaeology-Project
-I used RStudio to analyse excavation data from Finglesham, an Anglo-Saxon cemetery in East Kent to answer the question “Is there evidence of a significant imbalance between male and female representation in the cemetery in 500-600CE, and does this change in 600-700CE?”. 
-I have used the variables of sex: male, probable male, female, probable female, and Dating: 500-600, 600-700. I excluded unknown sex so that I could focus on individuals with reasonably identifiable sex. I used these variables by grouping Sex into its different dating periods to compare how the demographic changes over time. I also combined sexes into ‘total male’ and ‘total female’, grouping the ‘probables’ and ‘certains’ together so that I could explore the lowest and highest possible representations of each sex. To understand the data, I used three exploratory methods: a table, a bar plot, and a site plan. I made a table of males, probable males, females, and probable females, grouped into the time periods 500-600 and 600-700. This reveals if there is any obvious pattern in how sex is distributed, and if this changes over time. I also made a contingency table of the total males and total females so that I can hypothesis test both the highest and lowest possible representations of males and females in each period. I then made a graph displaying the males, probable males, females, and probable females. This helped display the proportion of the sexes which were ‘probable’ and ‘certain’ so that the audience could visualise the level of uncertainty in the ‘total’ number of a given sex. I created a plan of the cemetery displaying unsampled graves, unknown sexes, total males and total females. I did this to visually check for any positioning bias which might affect the distribution of sex representation. For instance, if females/males were divided into particular areas. I used the 1-sample chi-squared test because I wanted to test if there was any significant difference from the expected output of 50:50. I could then test if the observed counts differed significantly from 50:50, meaning that difference was statistically significant to evidence imbalance. In all cases, the p-value is greater than the significance level, meaning the test fails to reject the null hypothesis (H₀). Therefore, the difference between males and female representation is insignificant the p level and does not change from 500-700, meaning there is not enough evidence to state that the proportions of males to females differ from 50:50 in 500-600, or that this proportion changes in 600-700. I will therefore accept the null hypothesis that the cemetery representation is balanced. This means that the difference in representation is more likely due to chance than a cultural decision in the burials of particular sex at the cemetery. My statistical investigation infers that there is no significant imbalance between males’ and females’ representation during either 500-600 and 600-700, and the proportion remains the same in both periods. This is indicated by both chi-squared test and proportion tests. This suggests that burials at Finglesham during 500-700 did not focus on one sex, but mixed male and females in the same area. This indicates that males and females were given similar burial rites, suggesting an egalitarian society in which both males and females play a strong social role. To improve, this study, perhaps another hypothesis test could be undertaken to understand the distribution of how sexes were positioned throughout the cemetery. For instance, if males are usually next to females facing the same direction, possibly suggesting spouses buried together. Furthermore, if more precise dates were taken, trends in burials could be revealed under more specific periods. For instance, in periods of war, perhaps more men would be buried than women.
+# Archaeological Data Analysis of the Finglesham Cemetery (RStudio)
+
+## Project Overview
+This project uses **RStudio** to analyse excavation data from **Finglesham**, an Anglo-Saxon cemetery in East Kent. The aim of the analysis is to address the research question:
+
+> *Is there evidence of a significant imbalance between male and female representation in the cemetery during 500–600 CE, and does this change in 600–700 CE?*
+
+The project applies statistical and visual methods to explore demographic representation across two chronological phases of burial activity.
+
+---
+
+## Data and Variables
+The dataset includes individuals dated to two periods:
+- **500–600 CE**
+- **600–700 CE**
+
+Sex categories used in the analysis:
+- Male  
+- Probable Male  
+- Female  
+- Probable Female  
+
+Individuals of **unknown sex were excluded** to focus on remains with reasonably identifiable biological sex.
+
+To address uncertainty in osteological identification, sexes were also grouped into:
+- **Total Male** (Male + Probable Male)
+- **Total Female** (Female + Probable Female)
+
+This allowed exploration of both **minimum and maximum possible representations** of each sex.
+
+---
+
+## Methodology
+To explore demographic patterns and test for imbalance, three main exploratory approaches were used:
+
+### 1. Tabular Analysis
+- A table was created showing counts of males, probable males, females, and probable females for each period.
+- A contingency table of **total males vs total females** was also produced to support hypothesis testing.
+
+### 2. Visualisation
+- A **bar plot** was generated to display the distribution of certain and probable sex identifications.
+- This helped visualise uncertainty within the dataset and compare proportional representation.
+- A **cemetery plan** was created showing:
+  - Unsampled graves
+  - Unknown sexes
+  - Total males
+  - Total females  
+  This was used to assess whether spatial clustering or positioning bias affected sex distribution.
+
+### 3. Statistical Testing
+- A **one-sample chi-squared test** was applied to test whether observed sex ratios differed significantly from an expected **50:50 distribution**.
+- Tests were run for both periods using the highest and lowest possible sex estimates.
+
+---
+
+## Results
+Across all tests, the **p-values exceeded the chosen significance threshold**, meaning the null hypothesis could not be rejected.
+
+This indicates:
+- No statistically significant imbalance between male and female representation in **500–600 CE**
+- No statistically significant change in this balance during **600–700 CE**
+
+Observed differences are therefore more likely due to **random variation** than deliberate cultural or burial practices.
+
+---
+
+## Interpretation
+The results suggest that burials at Finglesham between 500–700 CE:
+- Did not preferentially focus on one sex
+- Showed mixed burial patterns across the cemetery
+- Likely reflect **similar burial rites and social treatment** for males and females
+
+This supports the interpretation of a relatively **egalitarian burial practice**, where both sexes held comparable social importance in funerary contexts.
+
+---
+
+## Tools Used
+- **RStudio**
+- Data tables and contingency tables
+- Bar plots and spatial visualisation
+- Chi-squared hypothesis testing
+
+---
+
+## Future Work
+Further analysis could explore:
+- Spatial relationships between individuals (e.g. proximity of male–female burials)
+- Directionality or clustering patterns that may indicate family or social groupings
+- Finer chronological divisions to assess demographic shifts during periods of conflict or social change
+
+---
